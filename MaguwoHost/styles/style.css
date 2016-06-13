@@ -87,6 +87,10 @@
 		-moz-appearance: none;
 		appearance: none;
 	}
+	button::-moz-focus-inner{
+		padding: 0;
+		border: 0;
+	}
 	.container{
 		width: 1170px;
 		padding: 0;
@@ -298,7 +302,7 @@
 }
 
 	.screen__splash .btn-domain{
-		width: 154px;
+		width: 155px;
 		height: 54px;
 		background: #ffe13e;
 		font-family: 'Raleway', sans-serif;
