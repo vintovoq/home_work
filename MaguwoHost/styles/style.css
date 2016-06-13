@@ -1,0 +1,315 @@
+/*Fonts*/
+
+@font-face {
+    font-family: 'Rockwell';
+    src: url('../fonts/rockwell-bold.eot');
+    src: url('../fonts/rockwell-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rockwell-bold.woff2') format('woff2'),
+         url('../fonts/rockwell-bold.woff') format('woff'),
+         url('../fonts/rockwell-bold.ttf') format('truetype'),
+         url('../fonts/rockwell-bold.svg#rockwell-boldregular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rockwell';
+    src: url('../fonts/rockwell-regular.eot');
+    src: url('../fonts/rockwell-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rockwell-regular.woff') format('woff'),
+         url('../fonts/rockwell-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato-bold.eot');
+    src: url('../fonts/lato-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-bold.woff2') format('woff2'),
+         url('../fonts/lato-bold.woff') format('woff'),
+         url('../fonts/lato-bold.ttf') format('truetype'),
+         url('../fonts/lato-bold.svg#latobold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway-bold.eot');
+    src: url('../fonts/raleway-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-bold.woff2') format('woff2'),
+         url('../fonts/raleway-bold.woff') format('woff'),
+         url('../fonts/raleway-bold.ttf') format('truetype'),
+         url('../fonts/raleway-bold.svg#ralewaybold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway-regular.eot');
+    src: url('../fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-regular.woff2') format('woff2'),
+         url('../fonts/raleway-regular.woff') format('woff'),
+         url('../fonts/raleway-regular.ttf') format('truetype'),
+         url('../fonts/raleway-regular.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway-semibold.eot');
+    src: url('../fonts/raleway-semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-semibold.woff2') format('woff2'),
+         url('../fonts/raleway-semibold.woff') format('woff'),
+         url('../fonts/raleway-semibold.ttf') format('truetype'),
+         url('../fonts/raleway-semibold.svg#ralewaysemibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+/*end fonts*/
+
+
+/*main styles*/
+		*{
+
+	}
+
+	body{
+		margin: 0 auto;
+		padding: 0;
+		font-family: 'Roboto', sans-serif;
+	}
+	
+	h1{
+		font-family: 'Roboto Slab', serif;
+	}
+	
+	select{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+	.container{
+		width: 1170px;
+		padding: 0;
+		margin: 0 auto;
+		position: relative;
+		z-index: 6;
+
+	}
+	.clearfix:after,
+	.container:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+
+	.center{
+		text-align: center;
+	}
+	
+	.left_float{
+		float: left;
+	}
+
+	.form-control-horizantal{
+		display:inline-block;
+		float: left;
+	}
+
+	.form-control-horizantal:last-child,
+	.form-control-container:last-child{
+		margin:0;
+	}
+	
+	.form-control-container{
+		margin: 0;
+
+	}
+	.form-control{
+		font-size:18px;
+		
+		border:none;
+	}
+
+
+	
+
+
+
+/*end main styles*/
+
+/*header styles*/
+
+	.header{
+		width: 100%;
+		margin: 0 auto;
+		background: #fff;
+		position: fixed;
+		z-index: 99;
+	}
+	.emblem{
+		float: left;
+		width: 26px;
+		height: 33px;
+		background: url('../img/logo.png') no-repeat left;
+		padding: 0px 0 0px 18px;
+	}
+	.header .logo {
+		line-height: 30px;
+		float: left;
+		font-size: 30px;
+		font-family: 'Rockwell', serif;
+		padding: 57px 0 55px 0px;
+		text-decoration: none;
+		color: #202242;
+	}
+	
+	.header .nav{
+		float: left;
+		padding: 70px 0px 58px 87px;
+		margin: 0 auto;
+		
+	}
+
+	.header .nav li{
+		float: left;
+		list-style: none;
+		margin: 0 20px;
+	}
+	.header .nav li:last-child{
+		margin-right:0;
+	}
+	.header .nav li a{
+		text-decoration: none;
+		font-family: 'Raleway', sans-serif;
+		text-transform: uppercase;
+		font-size: 16px;
+		color:#202242;
+	}
+	.header .nav li a:hover{
+		font-weight: 600;
+		color:#ffe13e;
+	}
+
+	.header .contacts{
+		float: right;
+		padding:36px 2px 31px 47px;
+		border-left: 1px solid #ebebeb;
+		
+	}
+	.header .call-to{
+		font-size: 12px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 600;
+		color:#202242;
+		padding-top: 3px;
+
+	}
+	.header .call-to-us{
+		padding-top: 22px;
+
+	}
+	.header .btn{
+		float: left;
+		display: block;
+		text-decoration: none;
+		background: #ffe13e;
+		padding: 12px 32px;
+		font-size: 14px;
+		color: #202242;
+	}
+
+	.header .phone_number{
+		display: block;
+		float:right;
+		font-family: 'Lato', sans-serif;
+		font-size: 24px;
+		border-left: 1px solid #babbc4;
+		padding: 0 0 0 19px;
+		margin: 4px -2px 0 0;
+	}
+/*end header styles*/
+/*first screen style*/
+ 	.screen__splash{
+ 		width: 100%;
+		background:url("../img/bg_screen.jpg") no-repeat center;
+		/*background-color: #ccc;*/
+ 		background-size: cover;
+ 		padding-top: 369px;
+ 		position:relative;
+		
+ 	}
+ 	.screen__splash .font-size-48 {
+ 		margin: 0px;
+ 		font-family: 'Rockwell', serif;
+ 		font-size: 48px;
+ 		color: #fff;
+
+ 	}
+ 	.screen__splash .font-size-30 {
+ 		margin: 27px 0 52px 0;
+ 		font-family: 'Raleway', serif;
+ 		font-size: 30px;
+ 		color: #fff;
+
+ 	}
+
+ 	.screen__splash .screen-icon{
+ 		width: 102px;
+ 		height: 109px;
+ 		margin: 0px auto;
+		background: url("../img/shape.png");
+		
+	}
+	
+
+	.form-container{
+			padding: 62px 0px 140px 0px; 
+			
+	}
+	.screen__splash form{
+		
+		margin: 0 auto;
+		width: 536px;
+		height: 54px;
+		border: 18px solid rgba(255, 255, 255, .9);
+		
+	}
+
+	.screen__splash .input{
+		background: #fff;
+		font-family: 'Raleway', serif;
+		font-size: 18px;
+		width: 229px;
+
+		padding: 17px 22px 16px 22px;
+	}
+
+	.screen__splash .select{
+		background: #ffe13e;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 700;
+		padding: 15px 28px 16px 17px;
+	}
+
+	.screen__splash .btn-domain{
+		background: #ffe13e;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 700;
+		font-size: 14px;
+		margin: 0px;
+		padding: 18px 17px 20px 18px;
+	}
+
+	.darken{
+		position: absolute;
+		background: rgba(47, 47, 47, .33);
+		top:0;right:0;bottom:0;left:0;
+		z-index: 5;
+	}
+
+/*second screen style*/
+
+
+
+
+
