@@ -1,4 +1,4 @@
-/*Fonts*/
+﻿/*Fonts*/
 
 @font-face {
     font-family: 'Rockwell';
@@ -129,6 +129,9 @@
 		
 		border:none;
 	}
+	.form-control:focus{
+		outline:none;
+}
 
 
 	
@@ -285,20 +288,28 @@
 	}
 
 	.screen__splash .select{
+		height: 54px;
+		width: 108px;
 		background: #ffe13e;
 		font-family: 'Raleway', sans-serif;
 		font-weight: 700;
-		padding: 15px 28px 16px 17px;
-	}
+		padding: 15px 29px 16px 22px;
+		border-right: 1px solid #fff;
+}
 
 	.screen__splash .btn-domain{
+		width: 154px;
+		height: 54px;
 		background: #ffe13e;
 		font-family: 'Raleway', sans-serif;
 		font-weight: 700;
 		font-size: 14px;
+		line-height: 14px;
 		margin: 0px;
-		padding: 18px 17px 20px 18px;
+		padding: 18px 16px 20px 17px;
+		
 	}
+	
 
 	.darken{
 		position: absolute;
