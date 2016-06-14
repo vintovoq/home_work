@@ -87,10 +87,13 @@
 		-moz-appearance: none;
 		appearance: none;
 	}
+<<<<<<< HEAD
 	button::-moz-focus-inner{
 		padding: 0;
 		border: 0;
 	}
+=======
+>>>>>>> refs/remotes/origin/master
 	.container{
 		width: 1170px;
 		padding: 0;
@@ -302,7 +305,11 @@
 }
 
 	.screen__splash .btn-domain{
+<<<<<<< HEAD
 		width: 155px;
+=======
+		width: 154px;
+>>>>>>> refs/remotes/origin/master
 		height: 54px;
 		background: #ffe13e;
 		font-family: 'Raleway', sans-serif;
