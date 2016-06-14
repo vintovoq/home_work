@@ -82,7 +82,12 @@
 		font-family: 'Rockwell', serif;
 		font-weight: normal;
 	}
-	
+	h2{
+		font-family: 'Raleway', sans-serif;
+		font-weight: bold;
+		margin: 0;
+		padding: 0;
+	}
 	select{
 		-webkit-appearance: none;
 		-moz-appearance: none;
@@ -135,9 +140,6 @@
 }
 	
 /*end main styles*/
-
-
-
 
 /*header styles*/
 
@@ -203,9 +205,6 @@
 		font-family: 'Raleway', sans-serif;
 		font-weight: 600;
 		color:#202242;
-
-		/*padding-top: 3px;*/
-
 	}
 	.header .call-to-us{
 		margin-top: 22px;
@@ -234,29 +233,33 @@
 		margin: 4px -2px 0 0;
 	}
 /*end header styles*/
+
 /*first screen style*/
  	.screen__splash{
  		width: 100%;
  		background:url("../img/bg_screen.jpg") no-repeat center;
 		background-size: cover;
- 		position:absolute;
+ 		position: relative;
  		height: 100vh;
  		min-height: 940px;
 	}
-	.vert_align{
-		position: relative;
-		top:50%;
-		transform: translateY(50%);
-		}
+	.screen__splash .container{
+		
+		top: calc(50% + 147px);
+		transform: translateY(-50%);
+	}
+
 
  	.screen__splash .splash_title {
- 		margin: 83px 0px 0px 0px;
+ 		padding: 0px 0px 50px 0px;
+ 		margin: 0px 0px 0px 0px ;
  		font-size: 48px;
  		color: #fff;
 
  	}
  	.screen__splash .splash_description {
- 		margin: 27px 0 52px 0;
+ 		margin: 0px 0px 0px 0px;
+ 		padding: 0px 0px 60px 0px;
  		font-family: 'Raleway', serif;
  		font-size: 30px;
  		color: #fff;
@@ -302,8 +305,7 @@
 		font-weight: 700;
 		padding: 15px 29px 16px 22px;
 		border-right: 1px solid #fff;
-}
-
+	}
 	.screen__splash .btn-domain{
 		width: 155px;
 		height: 54px;
@@ -324,8 +326,61 @@
 		top:0;right:0;bottom:0;left:0;
 		z-index: 5;
 	}
+/*end first screen*/
 
 /*second screen style*/
+	.screen__services{
+		position: relative;
+		margin: 0;
+		padding: 0;
+	}
+	.side_bg {
+		position: absolute;
+		z-index: 1;
+		height: 100%;
+		top: 0;
+		width: 50%;
+	}
+	.side_bg_left{
+		left:0;
+		background: #202242;
+	}
+	.side_bg_right{
+		right:0;
+		background: #ffe13e;
+	}
+	.screen__services .webhost_service{
+		/*position: relative;*/
+		min-height: 350px;
+		top: 50%;
+		/*transform: translateY(-50%);*/
+		margin: 0 auto;
+		padding: 0;
+		float: left;
+		width: 50%;
+	}
+	.screen__services .web_icon{
+		display: block;
+		background: url('../img/service_shape.png') no-repeat center;
+		width: 169px;
+		height: 169px;
+		margin: 0 auto;
+	}
+	.screen__services .serv_title{
+		color: #fff;
+		font-size: 36px;
+	}
+	.sccreen__services .serv_cont{
+		font-family: 'Raleway', serif;
+		font-size: 14px;
+		color:#fff;
+
+	}
+	.screen__services .domain_service{
+		float: right;
+		width: 50%;
+	}
+/*end second screen style*/
 
 
 
