@@ -101,6 +101,7 @@
 		z-index: 6;
 
 	}
+	.row:after,
 	.clearfix:after,
 	.container:after{
 		content:'';
@@ -220,7 +221,12 @@
 		font-size: 14px;
 		color: #202242;
 	}
-
+	.btn:hover{
+		background: #202242;
+		color: #ffe13e;
+		transition: background .5s ease,
+					color .5s ease;
+	}
 	.header .phone_number{
 		display: block;
 		text-decoration: none;
@@ -333,6 +339,7 @@
 		position: relative;
 		margin: 0;
 		padding: 0;
+
 	}
 	.side_bg {
 		position: absolute;
@@ -350,14 +357,24 @@
 		background: #ffe13e;
 	}
 	.screen__services .webhost_service{
-		/*position: relative;*/
-		min-height: 350px;
-		top: 50%;
-		/*transform: translateY(-50%);*/
-		margin: 0 auto;
-		padding: 0;
+		position: relative;
 		float: left;
 		width: 50%;
+		min-height: 650px;
+	}
+	.screen__services .domain_sevice{
+		position: relative;
+		float: right;
+		width: 50%;
+		min-height: 650px;
+	}
+	
+	.sub_container{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		padding: 0 84px;
+		
 	}
 	.screen__services .web_icon{
 		display: block;
@@ -365,23 +382,125 @@
 		width: 169px;
 		height: 169px;
 		margin: 0 auto;
+		margin-bottom: 55px; 
+
+	}
+	.screen__services .dom_icon{
+		display: block;
+		font-size: 135px;
+		font-weight: bold;
+		color: #202242;
+		margin-bottom: 66px;
+
 	}
 	.screen__services .serv_title{
 		color: #fff;
 		font-size: 36px;
+
 	}
-	.sccreen__services .serv_cont{
+	.screen__services .serv_content{
+		margin: 10px 0px 60px 0px;
+		line-height: 20px;
 		font-family: 'Raleway', serif;
 		font-size: 14px;
 		color:#fff;
+	}
+	.screen__services .serv_btn{
+		text-decoration: none;
+		color: #fff;
+		border: 3px solid #fff;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 19px 53px;
+	}
+	.serv_btn:hover{
+		color: #202242;
+		background: #fff;
+		transition: background .5s ease,
+					color .5s ease;
+	}
 
-	}
-	.screen__services .domain_service{
-		float: right;
-		width: 50%;
-	}
 /*end second screen style*/
 
+/*third screen*/
+
+	.screen__features{
+		margin: 0;
+		padding: 0;
+		position: relative;
+		background: #fbf8f1;
+	}
+
+	.screen__features .container{
+		background: url('../img/futures_shape.png') no-repeat center;
+		min-height: 700px;
+
+	}
+	.screen__features .feature_tittle{
+		padding-top: 95px;
+		font-size: 48px;
+		line-height: 48px;
+		font-weight: bold;
+		color: #202242;
+	}
+	.screen__features .feature_description{
+		font-size: 24px;
+		color: #202242;
+	}
+	.screen__features .row{
+		margin-top: 85px; 
+	}
+	.screen__features .col{
+		float: left;
+		width: 25%;
+	}
+	.screen__features .icon_description{
+		width: 128px;
+		height: 128px;
+		margin: 0 auto;
+	}
+	.screen__features .support{
+		background: url('../img/icon_support.png');
+	}
+	.screen__features .technology{
+		background: url('../img/icon_technology.png');
+	}
+	.screen__features .database{
+		background: url('../img/icon_database.png');
+	}
+	.screen__features .monitoring{
+		background: url('../img/icon_monitoring.png');
+	}
+	.screen__features .icon_border{
+		margin: 0 auto;
+		margin-top: 35px;
+		width: 70px;
+		height: 3px;
+		background:#8d8d99;
+	}
+	.screen__features .description_tittle{
+		margin: 30px 0;
+		font-family: 'Rockwell', serif;
+		font-weight: normal;
+		font-size: 30px;
+		line-height: 30px;
+		color: #f4d320;
+	}
+	.screen__features .description_content{
+		font-size: 14px;
+		color: #202242;
+		line-height: 25px;
+		padding: 10px 25px;
+		margin: 0;
+
+	}
+	.screen__features
+	.screen__features
+	.screen__features
+	.screen__features
+	.screen__features
+
+/*end third screen*/
 
 
 
