@@ -134,6 +134,7 @@
 		font-size:18px;
 		color: #2d2d2d;
 		border:none;
+		position: relative;
 	}
 	.form-control:focus{
 		outline:none;
@@ -307,6 +308,7 @@
 	}
 
 	.screen__splash .select{
+		
 		height: 54px;
 		width: 108px;
 		background: #ffe13e;
@@ -316,10 +318,19 @@
 		border-right: 1px solid #fff;
 		border-radius: 0;
 	}
+	.arrow{
+		position: relative;
+	}
 	.arrow:after{
+		content: '';
 		position: absolute;
-		border: 15px solid transparent;
-		border-top: 15px solid black;
+		height: 10px;
+		width: 10px;
+		border-right: 2px solid white;
+		border-bottom: 2px solid white;
+		transform: rotate(45deg);
+		right: 14px;
+		top: 18px;
 	}
 	.screen__splash .btn-domain{
 		width: 155px;
