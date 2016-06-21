@@ -534,8 +534,65 @@
 		margin: 0;
 	}
 	
-
 /*end third screen*/
+
+
+/*fourth screen*/
+	
+	.screen__clients{
+		margin: 0;
+		padding: 0;
+		position: relative;
+	}
+
+	.screen__clients .row_clients{
+		padding: 50px 0 0 0;
+	}
+
+	.screen__clients .clients_tittle{
+		font-size: 36px;
+		line-height: 36px;
+		font-weight: bold;
+		color: #202242;
+	}
+
+	.screen__clients .clients_description{
+		font-size: 16px;
+	}
+
+	.screen__clients .col_clients_description{
+		width: 33.33333%;
+		float: left;
+		
+	}
+	.screen__clients .col_clients_logo{
+		float: right;
+		
+	}
+	.screen__clients .clients_logo{
+		width: 25%;
+		float: left;
+		padding: 0 10px;
+	}
+	
+	.screen__clients .col_clients{
+		width: 33.3333%;
+		float: left;
+		background: #faf9f9;
+		
+	}
+
+	.screen__clients .col_clients:nth-child(2){
+		margin: 0 30px;
+	}
+
+	.screen__clients
+	.screen__clients
+	.screen__clients
+	.screen__clients
+
+
+/*end fourth screen*/
 
 
 
