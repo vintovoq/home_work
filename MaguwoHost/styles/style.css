@@ -136,9 +136,14 @@
 		border:none;
 		position: relative;
 	}
+	
 	.form-control:focus{
 		outline:none;
-}
+	}
+	
+	.curs_pointer{
+	cursor: pointer;
+	}	
 	
 /*end main styles*/
 
@@ -163,14 +168,15 @@
 		float: left;
 		font-size: 30px;
 		font-family: 'Rockwell', serif;
-		margin: 57px 0 55px 0px;
+		margin: 56px 0;
 		text-decoration: none;
 		color: #202242;
 	}
 	
 	.header .nav{
 		float: left;
-		margin: 70px 0px 58px 62px;
+		margin: 64px 0px 64px 100px;
+		padding: 0;
 		
 		
 	}
@@ -192,7 +198,6 @@
 		color:#202242;
 	}
 	.header .nav li a:hover{
-		font-weight: 600;
 		color:#ffe13e;
 	}
 
@@ -247,12 +252,12 @@
  		background:url("../img/bg_screen.jpg") no-repeat center;
 		background-size: cover;
  		position: relative;
+ 		padding: 147px 0 0;
  		
 	}
 	.screen__splash .container{
-		
- 		height: calc(100vh + 147px);
- 		min-height: 450px;
+		height: calc(100vh - 147px);
+ 		min-height: 500px;
  		max-height: 940px;
 		
 	}
@@ -260,7 +265,8 @@
 	.screen__splash .vert_align{
 		top: 50%;
 		transform: translateY(-50%);
-		position: relative;
+		position: absolute;
+		width: 100%;
 	}
 
  	.screen__splash .splash_title {
@@ -289,7 +295,7 @@
 	
 	.form-container{
 		margin: 0 auto;
-		background: rgba(255, 255, 255, .9);
+		background: rgba(255, 255, 255, .5);
 		width: 572px;
 		height: 90px;
 	}
@@ -297,6 +303,7 @@
 	.screen__splash form{
 		margin: 50px 0 0 0;
 		padding: 18px 18px;
+
 	}
 
 	.screen__splash .input{
@@ -422,6 +429,7 @@
 		color:#fff;
 	}
 	.screen__services .serv_btn{
+		display: inline-block;
 		text-decoration: none;
 		color: #fff;
 		border: 3px solid #fff;
@@ -444,12 +452,12 @@
 		margin: 0;
 		padding: 0;
 		position: relative;
-		background: #fbf8f1;
+		background: #fbf8f1 url('../img/futures_shape.png') no-repeat center;
+
 	}
 
 	.screen__features .container{
-		background: url('../img/futures_shape.png') no-repeat center;
-		padding: 75px 0;
+		padding: 50px 0;
 
 	}
 	.screen__features .feature_tittle{
@@ -496,22 +504,27 @@
 		background:#8d8d99;
 	}
 
-	/*.screen__features .description_tittle:before{
+	.screen__features .description_tittle:before{
 		position: absolute;
-		margin: 0 auto;
-		margin-top: 35px;
+		left:50%;
+		transform: translateX(-50%);
+		bottom: 65px;
+		content: '';
 		width: 70px;
 		height: 3px;
 		background:#8d8d99;
-	}*/
+		margin: 0px 0px 0px 0px;
+		
+	}
 
 	.screen__features .description_tittle{
-		margin: 30px 0;
+		margin: 80px 0 30px 0;
 		font-family: 'Rockwell', serif;
 		font-weight: normal;
 		font-size: 30px;
 		line-height: 30px;
 		color: #f4d320;
+		position: relative;
 	}
 	.screen__features .description_content{
 		font-size: 14px;
@@ -519,13 +532,8 @@
 		line-height: 25px;
 		padding: 10px 25px;
 		margin: 0;
-
 	}
-	.screen__features
-	.screen__features
-	.screen__features
-	.screen__features
-	.screen__features
+	
 
 /*end third screen*/
 
