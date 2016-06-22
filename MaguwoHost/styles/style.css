@@ -550,6 +550,11 @@
 	.screen__clients .container{
 		padding: 50px 0;
 	}
+
+	.row_clients{
+		padding: 0 0 50px 0; 
+	}
+
 	.screen__clients .clients_tittle{
 		font-size: 36px;
 		line-height: 36px;
@@ -557,13 +562,9 @@
 		color: #202242;
 	}
 
-	.row_clients{
-		padding: 0 0 50px 0; 
-	}
-
-
 	.screen__clients .clients_description{
 		font-size: 16px;
+		color: #adadad;
 	}
 
 	.screen__clients .col_clients{
@@ -610,10 +611,59 @@
 		right: 20px;
 		bottom: -50px;
 	}
-
-
 /*end fourth screen*/
 
+/*fifeth screen*/
 
+	.screen_prices{
+		background: #202242;
 
+	}
+
+	.screen_prices .container{
+		padding: 50px 0;
+	}
+
+	.screen_prices .prices_tittle{
+		float: left;
+		margin: 0 0 0 95px;
+	}
+
+	.screen_prices .prices_tittle h2{
+		font-size: 36px;
+		color: #fff;
+		line-height: 36px;
+	}
+	.screen_prices .prices_dsecription{
+		margin: 10px 0 0 0;
+		color: #67687b;
+		font-size: 18px;
+
+	}
+	.screen_prices .prices_btn{
+		display: block;
+		text-decoration: none;
+		background: #ffe13e;
+		border: 4px solid #fff;
+		float: right;
+		margin: 0 100px 0 0;
+		padding: 29px 50px 29px 50px;
+		color: #202242;
+		font-size: 18px;
+		font-weight: bold;
+		transition: background .5s ease,
+					color .5s ease;
+	}
+
+	.screen_prices .prices_btn:hover{
+		background: #202242; 
+		color: #ffe13e;
+		transition: background .5s ease,
+					color .5s ease;
+	}
+	.screen_prices
+	.screen_prices
+	.screen_prices
+
+/*end fifeth screen*/
 
