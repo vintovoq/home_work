@@ -259,7 +259,7 @@
 		height: calc(100vh - 147px);
  		min-height: 500px;
  		max-height: 940px;
-		
+		padding: 50px 0; 
 	}
 
 	.screen__splash .vert_align{
@@ -366,7 +366,9 @@
 		position: relative;
 		margin: 0;
 		padding: 0;
-
+	}
+	.screen__sevrice .container{
+		padding: 50px 0;
 	}
 	.side_bg {
 		position: absolute;
@@ -545,10 +547,9 @@
 		position: relative;
 	}
 
-	.screen__clients .row_clients{
-		padding: 50px 0 0 0;
+	.screen__clients .container{
+		padding: 50px 0;
 	}
-
 	.screen__clients .clients_tittle{
 		font-size: 36px;
 		line-height: 36px;
@@ -556,40 +557,59 @@
 		color: #202242;
 	}
 
+	.row_clients{
+		padding: 0 0 50px 0; 
+	}
+
+
 	.screen__clients .clients_description{
 		font-size: 16px;
 	}
 
-	.screen__clients .col_clients_description{
-		width: 33.33333%;
+	.screen__clients .col_clients{
+		position: relative;
+		width: 31.625%;
 		float: left;
-		
-	}
-	.screen__clients .col_clients_logo{
-		float: right;
-		
-	}
-	.screen__clients .clients_logo{
-		width: 25%;
-		float: left;
-		padding: 0 10px;
+		/*background: #faf9f9;*/
 	}
 	
-	.screen__clients .col_clients{
-		width: 33.3333%;
-		float: left;
-		background: #faf9f9;
-		
-	}
-
 	.screen__clients .col_clients:nth-child(2){
-		margin: 0 30px;
+	margin: 0 30px;
+	}
+	
+	.screen__clients .clients_logo{
+		float: left;
+	}
+	
+	.screen__clients .clients_logo:nth-child(2){
+		float: right;
+	}	
+
+	.screen__clients .comment_clients{
+		font: italic 14px 'Rockwell', serif;
+		color: #a4a4a4;
+		line-height: 20px;
+		padding: 25px 25px 0 25px;
 	}
 
-	.screen__clients
-	.screen__clients
-	.screen__clients
-	.screen__clients
+	.screen__clients .signature_clients{
+		font: normal bold 16px 'Raleway', sans-serif;
+		color: #696969;
+		padding: 0 0 0 30px;
+	}
+
+	.screen__clients .col_clients_bg{
+		background: #faf9f9;
+	} 
+
+	.screen__clients .avatar{
+		position: absolute;
+		margin: 0;
+		border: 5px solid #e2e1e5;
+		border-radius: 50px;
+		right: 20px;
+		bottom: -50px;
+	}
 
 
 /*end fourth screen*/
