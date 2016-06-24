@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Микуляк Витёк</title>
-		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+		<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
 	</head>
 	
@@ -34,7 +34,7 @@
 		</div>
 <!-- -------------------------------------------------------------------------- -->
 		<div class="screen__splash">
-				<div class="container">
+				<div class="container container_splash container_screen">
 					<div class="vert_align">
 						<h1 class="splash_title center">Just a Proffesional Web Hosting Services</h1>
 						<p class="splash_description center">modern  -  fast  -  reliable</p>
@@ -42,14 +42,13 @@
 							<div class="form-container">
 							<form action="#" class="center">
 								<div class="form-control-horizantal ">
-									<input class="curs_pointer form-control input" type="text" placeholder="Your Domain Name ...">
+									<input class="form-control input" type="text" placeholder="Your Domain Name ...">
 								</div>
 								<div class="form-control-horizantal arrow"> 
 									<select class="curs_pointer form-control select ">
 										<option>.com</option>
 										<option>.net</option>
 										<option>.org</option>
-										
 									</select>
 								</div>
 								<div class="form-control-horizantal ">
@@ -65,7 +64,7 @@
 <!-- -------------------------------------------------------------------------- -->
 
 		<div class="screen__services">
-			<div class="container">
+			<div class="container container_services container_screen">
 				<div class="webhost_service center">
 					<div class="sub_container">
 						<span class="web_icon"></span>
@@ -91,31 +90,27 @@
 
 	
 		<div class="screen__features">
-			<div class="container center">
+			<div class="container center container_screen container_features">
 				<h2 class="feature_tittle">Our Features</h2>
 				<p class="feature_description">Our Best Features</p> 
 				<div class="row row_feature">
-					<div class="col_feature description_support">
+					<div class="col-lg-3">
 						<div class="icon_description support"></div>
-						<!-- <div class="icon_border"></div> -->
 						<h3 class="description_tittle">Live Support</h3>
 						<p class="description_content">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
 					</div>
-					<div class="col_feature description_technology">
+					<div class="col-lg-3">
 						<div class="icon_description technology"></div>
-						<!-- <div class="icon_border"></div> -->
 						<h3 class="description_tittle">Cloud Technology</h3>
 						<p class="description_content">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
 					</div>
-					<div class="col_feature description_database">
+					<div class="col-lg-3">
 						<div class="icon_description database"></div>
-						<!-- <div class="icon_border"></div> -->
 						<h3 class="description_tittle">Hi Tech Database</h3>
 						<p class="description_content">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
 					</div>
-					<div class="col_feature description_monitoring">
+					<div class="col-lg-3">
 						<div class="icon_description monitoring"></div>
-						<!-- <div class="icon_border"></div> -->
 						<h3 class="description_tittle">Live Monitoring</h3>
 						<p class="description_content">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
 					</div>
@@ -127,36 +122,39 @@
 <!-- -------------------------------------------------------------------------- -->
 
 		<div class="screen__clients">
-			<div class="container">
+			<div class="container container_clients container_screen">
 				<div class="row row_clients">
-					<div class="col_clients">
+					<div class="col-lg-4">
 						<h2 class="clients_tittle">Our Clients</h2>
 						<p class="clients_description">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum.</p>
 					</div>
-					<div class="col_clients">
-						<div class="clients_logo"><img src="img/clients_logo1.png"></div>
-						<div class="clients_logo"><img src="img/clients_logo2.png"></div>
-					</div>		
-					<div class="col_clients">	
-						<div class="clients_logo"><img src="img/clients_logo3.png"></div>
-						<div class="clients_logo"><img src="img/clients_logo4.png"></div>
-					</div>
+					<div class="col-lg-2"><img src="img/clients_logo1.png"></div>
+					<div class="col-lg-2"><img src="img/clients_logo2.png"></div>
+					<div class="col-lg-2"><img src="img/clients_logo3.png"></div>
+					<div class="col-lg-2"><img src="img/clients_logo4.png"></div>
+					
 				</div>
 				<div class="row row_clients">
-					<div class="col_clients col_clients_bg">
-						<p class="comment_clients">“ This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. ”</p>
-						<p class="signature_clients">-Anna</p>
-						<p class="avatar"><img src="img/avatar.png"></p>
+					<div class="col-lg-4">
+						<div class=content_clients>
+							<p class="comment_clients">“ This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. ”
+							<p class="signature_clients">-Anna</p>
+						</div>
+						<div class="avatar"><img src="img/avatar.png"></div>
 					</div>
-					<div class="col_clients col_clients_bg">
-						<p class="comment_clients">“ This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. ”</p>
-						<p class="signature_clients">-Anna</p>
-						<p class="avatar"><img src="img/avatar.png"></p>
+					<div class="col-lg-4">
+						<div class=content_clients>
+							<p class="comment_clients">“ This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. ”
+							<p class="signature_clients">-Anna</p>
+						</div>
+						<div class="avatar"><img src="img/avatar.png"></div>
 					</div>
-					<div class="col_clients col_clients_bg">
-						<p class="comment_clients">“ This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. ”</p>
-						<p class="signature_clients">-Anna</p>
-						<p class="avatar"><img src="img/avatar.png"></p>
+					<div class="col-lg-4">
+						<div class=content_clients>
+							<p class="comment_clients">“ This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. ”
+							<p class="signature_clients">-Anna</p>
+						</div>
+						<div class="avatar"><img src="img/avatar.png"></div>
 					</div>
 				</div>
 			</div>
@@ -165,7 +163,7 @@
 <!-- -------------------------------------------------------------------------- -->
 
 		<div class="screen_prices">
-			<div class="container">
+			<div class="container container_screen container_prices">
 				<div class="prices_tittle">
 					<h2> Do you want to view Plans & Pricing ?</h2>
 					<p class="prices_dsecription">Follow the button in the right section.</p>
@@ -179,7 +177,7 @@
 <!-- -------------------------------------------------------------------------- -->
 
 	<div class="footer">
-		<div class="container">
+		<div class="container container_footer">
 			<div class="footer_map">
 				<div class="footer_pointer">
 					<p class="footer_pointer_description"><span class="pointer_img"></span>Yogyakarta, Indonesia 55282</p>

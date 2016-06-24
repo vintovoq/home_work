@@ -76,6 +76,7 @@
 		margin: 0 auto;
 		padding: 0;
 		font-family: 'Raleway', sans-serif;
+
 	}
 	
 	h1{
@@ -93,17 +94,16 @@
 		-moz-appearance: none;
 		appearance: none;
 	}
-	.container{
-		width: 1170px;
-		padding: 0;
-		margin: 0 auto;
+	.container_screen{
 		position: relative;
 		z-index: 6;
+		padding: 50px 0;
 
 	}
+	/*.container:after,*/
+	
 	.row:after,
-	.clearfix:after,
-	.container:after{
+	.clearfix:after{
 		content:'';
 		display:block;
 		clear:both;
@@ -255,11 +255,10 @@
  		padding: 147px 0 0;
  		
 	}
-	.screen__splash .container{
+	.screen__splash .container_splash{
 		height: calc(100vh - 147px);
- 		min-height: 500px;
+ 		min-height: 550px;
  		max-height: 940px;
-		padding: 50px 0; 
 	}
 
 	.screen__splash .vert_align{
@@ -271,13 +270,13 @@
 
  	.screen__splash .splash_title {
  		padding: 0px 0px 50px 0px;
- 		margin: 0px 0px 0px 0px ;
+ 		margin: 0;
  		font-size: 48px;
  		color: #fff;
 
  	}
  	.screen__splash .splash_description {
- 		margin: 0px 0px 0px 0px;
+ 		margin: 0px;
  		padding: 0px 0px 60px 0px;
  		font-family: 'Raleway', serif;
  		font-size: 30px;
@@ -311,22 +310,25 @@
 		font-family: 'Raleway', serif;
 		font-size: 18px;
 		width: 273px;
-		padding: 17px 22px 16px 22px;
+		padding: 15px 22px 14px 22px;
 	}
 
 	.screen__splash .select{
 		
 		height: 54px;
 		width: 108px;
-		background: #ffe13e;
+		background: transparent;
 		font-family: 'Raleway', sans-serif;
 		font-weight: 700;
 		padding: 15px 29px 16px 22px;
 		border-right: 1px solid #fff;
 		border-radius: 0;
+		position: relative;
 	}
 	.arrow{
 		position: relative;
+		background: #ffe13e;
+		z-index: 1;
 	}
 	.arrow:after{
 		content: '';
@@ -338,6 +340,8 @@
 		transform: rotate(45deg);
 		right: 14px;
 		top: 18px;
+		z-index: 1;
+
 	}
 	.screen__splash .btn-domain{
 		width: 155px;
@@ -367,9 +371,7 @@
 		margin: 0;
 		padding: 0;
 	}
-	.screen__sevrice .container{
-		padding: 50px 0;
-	}
+	
 	.side_bg {
 		position: absolute;
 		z-index: 1;
@@ -415,7 +417,7 @@
 		font-size: 135px;
 		font-weight: bold;
 		color: #202242;
-		margin-bottom: 66px;
+		margin-bottom: 31px;
 
 	}
 	.screen__services .serv_title{
@@ -458,10 +460,6 @@
 
 	}
 
-	.screen__features .container{
-		padding: 50px 0;
-
-	}
 	.screen__features .feature_tittle{
 		font-size: 48px;
 		line-height: 48px;
@@ -472,14 +470,11 @@
 		font-size: 24px;
 		color: #202242;
 	}
+	
 	.screen__features .row_feature{
 		margin-top: 85px; 
 	}
-	.screen__features .col_feature{
-		float: left;
-		padding: 0 15px;
-		width: 25%;
-	}
+	
 	.screen__features .icon_description{
 		width: 128px;
 		height: 128px;
@@ -496,14 +491,6 @@
 	}
 	.screen__features .monitoring{
 		background: url('../img/icon_monitoring.png');
-	}
-
-	.screen__features .icon_border{
-		margin: 0 auto;
-		margin-top: 35px;
-		width: 70px;
-		height: 3px;
-		background:#8d8d99;
 	}
 
 	.screen__features .description_tittle:before{
@@ -547,10 +534,6 @@
 		position: relative;
 	}
 
-	.screen__clients .container{
-		padding: 50px 0;
-	}
-
 	.row_clients{
 		padding: 0 0 50px 0; 
 	}
@@ -563,53 +546,41 @@
 	}
 
 	.screen__clients .clients_description{
+		padding: 0 25px 0 0; 
 		font-size: 16px;
 		color: #adadad;
+
 	}
 
-	.screen__clients .col_clients{
-		position: relative;
-		width: 31.625%;
-		float: left;
-		/*background: #faf9f9;*/
+	.screen__clients .content_clients{
+		background: #faf9f9;
+		padding: 25px;
 	}
-	
-	.screen__clients .col_clients:nth-child(2){
-	margin: 0 30px;
-	}
-	
-	.screen__clients .clients_logo{
-		float: left;
-	}
-	
-	.screen__clients .clients_logo:nth-child(2){
-		float: right;
-	}	
 
 	.screen__clients .comment_clients{
 		font: italic 14px 'Rockwell', serif;
 		color: #a4a4a4;
 		line-height: 20px;
-		padding: 25px 25px 0 25px;
+		margin: 0 0 10px 0;
 	}
 
 	.screen__clients .signature_clients{
 		font: normal bold 16px 'Raleway', sans-serif;
 		color: #696969;
-		padding: 0 0 0 30px;
+		margin: 0;
 	}
-
-	.screen__clients .col_clients_bg{
-		background: #faf9f9;
-	} 
 
 	.screen__clients .avatar{
 		position: absolute;
 		margin: 0;
 		border: 5px solid #e2e1e5;
-		border-radius: 50px;
-		right: 20px;
+		border-radius: 100%;
+		right: 40px;
 		bottom: -50px;
+		overflow: hidden;
+		width: 100px;
+		height: 100px;
+
 	}
 /*end fourth screen*/
 
@@ -617,11 +588,6 @@
 
 	.screen_prices{
 		background: #202242;
-
-	}
-
-	.screen_prices .container{
-		padding: 50px 0;
 	}
 
 	.screen_prices .prices_tittle{
@@ -670,7 +636,7 @@
 
 	}
 
-	.footer .container{
+	.footer .container_footer{
 		padding: 50px 0;
 	}
 
