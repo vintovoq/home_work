@@ -711,6 +711,7 @@
 		color: #fff;
 		font-weight: normal;
 		padding: 5px 0 5px 5px;
+<<<<<<< HEAD
 	}
 
 	.footer .footer_nav li a:hover{
@@ -743,6 +744,40 @@
 		color: #ffe13e;
 	}
 
+=======
+	}
+
+	.footer .footer_nav li a:hover{
+		color:#ffe13e;
+	}	
+
+	.icon_twitter:before{
+		content: '\e902'
+	}
+	.icon_instagram:before{
+		content: '\e901'
+	}
+	.icon_google:before{
+		content: '\e900'
+	}
+
+	.footer .soc_nav{
+		margin: 40px 0;
+
+	}
+
+	.footer .soc_nav li{
+		list-style: none;
+		float: left;
+		margin: 0 10px;
+
+	}
+	.footer .soc_nav li a{
+		text-decoration: none;
+		color: #ffe13e;
+	}
+
+>>>>>>> origin/gh-pages
 	.footer .soc_nav li a:hover{
 		text-decoration: none;
 		color: #fff;
@@ -758,7 +793,28 @@
 
 	.footer .copyright{
 		padding-top: 20px;	
+<<<<<<< HEAD
 	}
+=======
+	}
+
+	.footer .copyright_shape{
+		background: url('../img/footer_shape.png') no-repeat;
+		margin: 0 auto;
+		width: 33px;
+		height: 36px;
+	}
+
+	.footer .copyright_description{
+		font: normal normal 14px 'Raleway', sans-serif;
+		color: #fff;
+		padding: 25px 0; 
+	}
+
+
+	
+	.footer 
+>>>>>>> origin/gh-pages
 
 	.footer .copyright_shape{
 		background: url('../img/footer_shape.png') no-repeat;
